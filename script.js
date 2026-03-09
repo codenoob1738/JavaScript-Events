@@ -28,7 +28,26 @@ const form = document.getElementById("loginForm")
 const email = document.getElementById("email");
 const password = document.getElementById("password")
 
-form.addEventListener("submit", function(submitForm) {
-    submitForm.preventDefault();
-    alert("Login was sucessful!");
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (email.value === "") {
+        alert("Please enter your email");
+        return;
+    }
+
+    if (password.value === "") {
+        alert("Please enter your password");
+        return;
+    }
+
+    alert("Login was successful!");
+});
+
+email.addEventListener("focus", function(event) {
+    event.target.style.backgroundColor = "honeydew";
+})
+
+email.addEventListener("blur", function(event){
+    event.target.style.background = "";
 })
