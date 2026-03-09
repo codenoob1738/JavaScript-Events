@@ -44,6 +44,8 @@ form.addEventListener("submit", function(event) {
     alert("Login was successful!");
 });
 
+// Focus and Blur Events //
+
 email.addEventListener("focus", function(event) {
     event.target.style.backgroundColor = "honeydew";
 })
@@ -51,3 +53,13 @@ email.addEventListener("focus", function(event) {
 email.addEventListener("blur", function(event){
     event.target.style.background = "";
 })
+
+
+const div = document.getElementById("FootballCities");
+
+        div.addEventListener('click', function(event) {
+            if (event.target.tagName === "BUTTON") {
+                alert('You clicked: ' + event.target.textContent);
+                event.target.style.backgroundColor = "#FB9B8F";
+            }
+        });

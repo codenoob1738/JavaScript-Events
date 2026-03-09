@@ -6,9 +6,24 @@
     <title>JavaScript Events</title>
     <script defer src="script.js"></script>
     <style>
-        h1,h2,h3 {
-            border-top: 1px solid black;
+        h1,h2,h3,h4 {
+            border-top: 1px solid maroon;
             padding-top: 10px;
+            color: #E46A41;
+            text-decoration: wavy;
+            font-family: Chalkduster, fantasy;
+            font-weight: bold
+        }
+
+        #FootballCities button {
+            background-color: #F0E8D9;
+            color: maroon;
+            border: 2px solid #b48a8a;
+            padding: 3px 6px;
+            margin: 5px;
+            font-size: 10px;
+            cursor: pointer;
+            display: flexbox;
         }
     </style>
 </head>
@@ -34,13 +49,25 @@
     <form id="loginForm">
         <label for="email">Email Address</label><br>
         <input type="email" id="email"><br><br>
-    
+
         <label for="password">Password</label><br>
         <input type="password" id="password"><br><br>
-    
+
         <input type="submit" value="Submit">
     </form>
+
+    <!-- Event Delegation-->
+
+    <h4>Major Football Cities in Europe</h4>
+
+    <div id="FootballCities">
+        <button>Paris</button>
+        <button>Barcelona</button>
+        <button>London</button>
+        <button>Rome</button>
+        <button>Madrid</button>
+        <button>Munich</button>
+    </div>
 </body>
 
 </html>
-
