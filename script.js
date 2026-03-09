@@ -18,6 +18,17 @@ button.addEventListener("mouseout", function () {
 const searchBar = document.getElementById("search-bar");
 const keysPressed = document.getElementById("keysPressed");
 
-document.addEventListener('keydown', function (event) {
+searchBar.addEventListener("keydown", function (event) {
     keysPressed.textContent = event.key;
 });
+
+// Form Events //
+
+const form = document.getElementById("loginForm")
+const email = document.getElementById("email");
+const password = document.getElementById("password")
+
+form.addEventListener("submit", function(submitForm) {
+    submitForm.preventDefault();
+    alert("Login was sucessful!");
+})

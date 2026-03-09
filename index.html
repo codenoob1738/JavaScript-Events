@@ -6,22 +6,41 @@
     <title>JavaScript Events</title>
     <script defer src="script.js"></script>
     <style>
-        h1,
-        h2 {
-            border-top: 2px solid black;
+        h1,h2,h3 {
+            border-top: 1px solid black;
             padding-top: 10px;
         }
     </style>
 </head>
 
 <body>
+
+    <!-- Mouse Events -->
+
     <h1>Hover Over This Button!</h1>
     <button id="hoverButton">Hover over me</button>
     <p id="message">Testing the hover function</p>
 
+    <!-- Keyboard Events -->
+
     <h2>Type Into The Search Bar</h2>
     <input type="text" id="search-bar" placeholder="Search...">
     <p>Last key pressed: <strong id="keysPressed"></strong></p>
+
+    <!-- Form Events -->
+
+    <h3>Please Enter Your Login Info</h3>
+    
+    <form id="loginForm">
+        <label for="email">Email Address</label><br>
+        <input type="email"><br><br>
+    
+        <label for="password">Password</label><br>
+        <input type="password"><br><br>
+    
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
+
